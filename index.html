@@ -3,80 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unity-Apps</title>
+    <title>Unity-Apps | GX Style</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
     <style>
+        /* General Styling */
         body {
-            background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
             padding: 20px;
         }
 
+        /* GX Header Styling */
         .page-header {
-            text-align: center;
-            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff004d;
+            margin-bottom: 20px;
         }
 
+        .subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+
+        /* Badge Styling */
         .badge {
-            display: block;
-            text-align: center;
+            display: inline-block;
+            background-color: #ff004d;
+            padding: 10px 20px;
+            border-radius: 50px;
             font-size: 1rem;
-            margin-bottom: 15px;
-            padding: 10px;
-            background-color: #6c757d;
-            color: white;
-            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
+        .badge a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Alert Box */
         .alert {
-            text-align: center;
+            background: rgba(255, 0, 77, 0.2);
+            border: 1px solid #ff004d;
+            color: white;
             font-size: 1.1rem;
         }
 
+        /* GX-Themed Card */
         .card {
-            max-width: 500px;
+            background: rgba(255, 255, 255, 0.05);
+            border: none;
+            border-radius: 15px;
+            padding: 20px;
             margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            box-shadow: 0 0 20px rgba(255, 0, 77, 0.6);
         }
 
         .card-header {
             font-weight: bold;
-            text-align: center;
+            font-size: 1.3rem;
+            color: #ff004d;
         }
 
-        .card-body p {
-            text-align: center;
-            font-size: 1.1rem;
+        /* GX Button */
+        .gx-button {
+            display: inline-block;
+            background-color: #ff004d;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+        }
+
+        .gx-button:hover {
+            background-color: white;
+            color: #ff004d;
+            box-shadow: 0 0 15px rgba(255, 0, 77, 0.8);
         }
 
         .card-footer {
-            text-align: center;
             font-size: 0.9rem;
-            color: #6c757d;
+            color: #aaa;
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="page-header">
-        <h1>Unity-Apps</h1>
-        <small class="text-muted">Random Apps I made in Unity</small>
-    </div>
+    <h1 class="page-header">Unity-Apps</h1>
+    <p class="subtitle">Random Apps I made in Unity</p>
 
     <!-- Badge -->
-    <span class="badge">This website was made by 
-        <a href="https://github.com/RandomAppsInUnity" class="text-white font-weight-bold" target="_blank">RandomAppsInUnity</a>
+    <span class="badge">Made by 
+        <a href="https://github.com/RandomAppsInUnity" target="_blank">RandomAppsInUnity</a>
     </span>
 
     <!-- Alert -->
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <div class="alert alert-dismissible fade show" role="alert">
         <h4 class="alert-heading">⚠️ Site Under Construction</h4>
-        This website is not finished yet, so there is not much here.
+        This website is not finished yet. More content coming soon!
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -87,23 +129,24 @@
         <h5 class="card-header">App Site Links</h5>
         <div class="card-body">
             <p>
-                <a href="https://randomappsinunity.github.io/TicTacToeModified/" target="_blank" class="btn btn-primary">
-                    🎮 TicTacToeModified
+                <a href="https://randomappsinunity.github.io/TicTacToeModified/" target="_blank" class="gx-button">
+                    🎮 Play TicTacToeModified
                 </a>
             </p>
             <p class="text-muted">{More will be added soon.}</p>
         </div>
         <div class="card-footer">Click the link above to check out an app.</div>
     </div>
-</div>
 
-<!-- jQuery, Popper.js, and Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <!-- Footer with ChatGPT Modification Note -->
+    <div class="footer">
+        <p>Site modified with the help of <strong>ChatGPT</strong>.</p>
+    </div>
 
-<!-- Custom Scripts -->
-<script src="js/scripts.js"></script>
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
