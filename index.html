@@ -8,46 +8,92 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    <!-- Custom Styles (if needed) -->
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: block;
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #6c757d;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .alert {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .card {
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card-body p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .card-footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="page-header">
-                <h1>Unity-Apps <small>Random Apps I made in Unity</small></h1>
-            </div>
+<div class="container">
+    <div class="page-header">
+        <h1>Unity-Apps</h1>
+        <small class="text-muted">Random Apps I made in Unity</small>
+    </div>
 
-            <!-- Badge -->
-            <span class="badge badge-secondary">This website was made by 
-                <a href="https://github.com/RandomAppsInUnity" target="_blank">RandomAppsInUnity</a>
-            </span>
+    <!-- Badge -->
+    <span class="badge">This website was made by 
+        <a href="https://github.com/RandomAppsInUnity" class="text-white font-weight-bold" target="_blank">RandomAppsInUnity</a>
+    </span>
 
-            <!-- Alert -->
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <h4 class="alert-heading">Alert!</h4>
-                This Website is not Finished Yet, so there is nothing here.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
+    <!-- Alert -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <h4 class="alert-heading">⚠️ Site Under Construction</h4>
+        This website is not finished yet, so there is not much here.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
-            <!-- Card -->
-            <div class="card">
-                <h5 class="card-header">App Site Links</h5>
-                <div class="card-body">
-                    <p class="card-text">
-                        <a href="https://randomappsinunity.github.io/TicTacToeModified/" target="_blank">
-                            TicTacToeModified
-                        </a>
-                    </p>
-                    <p class="card-text">{More will be added soon.}</p>
-                </div>
-                <div class="card-footer">Click a link or paste it into your browser's address bar.</div>
-            </div>
+    <!-- Card -->
+    <div class="card">
+        <h5 class="card-header">App Site Links</h5>
+        <div class="card-body">
+            <p>
+                <a href="https://randomappsinunity.github.io/TicTacToeModified/" target="_blank" class="btn btn-primary">
+                    🎮 TicTacToeModified
+                </a>
+            </p>
+            <p class="text-muted">{More will be added soon.}</p>
         </div>
+        <div class="card-footer">Click the link above to check out an app.</div>
     </div>
 </div>
 
